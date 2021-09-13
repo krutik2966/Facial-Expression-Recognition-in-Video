@@ -1,0 +1,245 @@
+<!--
+
+=========================================================
+* Argon Dashboard - v1.1.2
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/argon-dashboard
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>
+    FER Grp-1
+  </title>
+  <!-- Favicon -->
+  <link href="./assets/img/brand/favicon.png" rel="icon" type="image/png">
+  <!-- <link href="{{ url_for('static', filename='assets/img/brand/favicon.png') }}" rel="icon" type="image/png"> -->
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <!-- Icons -->
+  <!-- <link href="{{ url_for('static', filename='assets/js/plugins/nucleo/css/nucleo.css') }}" rel="stylesheet" /> -->
+  <link href="/static/assets/js/plugins/nucleo/css/nucleo.css" rel="stylesheet" />
+  
+  <!-- <link href="{{ url_for('static', filename='assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet" /> -->
+  <link href="/static/assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
+
+  <!-- CSS Files -->
+  <!-- {{ url_for('static', filename='') }} -->
+  <link href="static/assets/css/argon-dashboard.css?v=1.1.2" rel="stylesheet" />
+  <!-- <link href="  {{ url_for('static', filename='assets/css/argon-dashboard.css?v=1.1.2') }}" rel="stylesheet" /> -->
+
+</head>
+
+<body class="wrapper container">
+
+  <div class="main-content">
+    <div class="col-xl-12 col-lg-6 mt-5 mb-5">
+      <div class="card card-stats mb-4 mb-xl-0">
+        <h1 class="mt-5 ml-4 display-1">
+          IE-406 Machine Learning
+        </h1>
+        <h1 class="ml-4">
+          Guided by : Prof. Manjunath Joshi
+        </h1>
+        <h1 class="ml-4">
+          Group 1
+        </h1>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-xl-2">
+              <h5 class="card-title text-uppercase text-muted mb-0">Group Members</h5>
+              <span class="h2 font-weight-bold mb-0">Krutik Parmar</span>
+              <!-- <span class="h2 font-weight-bold mb-0 mr-5">201801199</span> -->
+            </div>
+            <div class="col-xl-2">
+              <h5 class="card-title text-uppercase text-muted mb-0">ID</h5>
+              <span class="h4 mb-0">201801199</span>
+              <!-- <span class="h2 font-weight-bold mb-0 mr-5">201801199</span> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-2">
+              <span class="h2 font-weight-bold mb-0">Ayushi Patel</span>
+              <!-- <span class="h2 font-weight-bold mb-0 mr-5">201801199</span> -->
+            </div>
+            <div class="col-xl-2">
+              <span class="h4 mb-0">201801203</span>
+              <!-- <span class="h2 font-weight-bold mb-0 mr-5">201801199</span> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-2">
+              <span class="h2 font-weight-bold mb-0">Shivangi Zala</span>
+              <!-- <span class="h2 font-weight-bold mb-0 mr-5">201801199</span> -->
+            </div>
+            <div class="col-xl-2">
+              <span class="h4 mb-0">201801457</span>
+              <!-- <span class="h2 font-weight-bold mb-0 mr-5">201801199</span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center">
+      <h1 class="display-3">
+        Project : Facial Expression Recognition
+      </h1>
+    </div>
+
+    <!-- Header -->
+    <div class="container-fluid mt-5 mb-5">
+      <div class="row">
+        <div class="col-xl-12 mb-5 mb-xl-0 d-flex justify-content-center" style="height: 600px; width: 600px;">
+          <div class="card bg-gradient-default shadow">
+            <div class="card-body">
+              <h1 style="color:aliceblue;">Expression Recognition</h1>
+              <img src="{{ url_for('video_feed') }}" style="width: 100%;"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="row mt-5">
+      <div class="col-xl-12">
+        <div class="card">
+          <div class="card-header bg-transparent">
+            <div class="row align-items-center">
+              <div class="col">
+                <h5 class="h3 mb-0">CK+ Dataset</h5>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <!-- Chart -->
+            <div class="chart"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+              <canvas id="chart-orders" class="chart-canvas chartjs-render-monitor" style="display: block; height: 350px; width: 761px;" width="951" height="437"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header bg-gradient-primary pb-8 pt-5 pt-md-6">
+      <h1 class="display-3 ml-5" style="color:azure;">
+       Results
+      </h1>
+    </div>
+    <div class="container-fluid mt--7">
+      <div class="row">
+        <div class="col-xl-12 mb-5 mb-xl-0">
+          <div class="card bg-gradient-default shadow">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h2 class="text-white mb-0">Loss</h2>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- Chart -->
+              <div class="chart">
+                <!-- Chart wrapper -->
+                <canvas id="chart-sales" class="chart-canvas"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row mt-5">
+        <div class="col-xl-12 mb-5 mb-xl-0">
+          <div class="card bg-gradient-default shadow">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h2 class="text-white mb-0">Training Accuracy</h2>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- Chart -->
+              <div class="chart">
+                <!-- Chart wrapper -->
+                <canvas id="chart-train" class="chart-canvas"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-xl-12 mb-5 mb-xl-0">
+          <div class="card bg-gradient-default shadow">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h2 class="text-white mb-0">Validation Accuracy</h2>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- Chart -->
+              <div class="chart">
+                <!-- Chart wrapper -->
+                <canvas id="chart-val" class="chart-canvas"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+  <!--   Core   -->
+  <!-- <script src="{{ url_for('static', filename='assets/js/plugins/jquery/dist/jquery.min.js') }}"></script> -->
+  <!-- <script src="{{ url_for('static', filename='assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script> -->
+  <!--   Optional JS   -->
+  <!-- <script src="{{ url_for('static', filename='assets/js/plugins/chart.js/dist/Chart.min.js') }}"></script> -->
+  <!-- <script src="{{ url_for('static', filename='assets/js/plugins/chart.js/dist/Chart.extension.js') }}"></script> -->
+  <!--   Argon JS   -->
+  <!-- <script src="{{ url_for('static', filename='assets/js/argon-dashboard.min.js?v=1.1.2') }}"></script>  -->
+
+
+  <script src="/static/assets/js/plugins/jquery/dist/jquery.min.js"></script>
+  <script src="/static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!--   Optional JS   -->
+  <script src="/static/assets/js/plugins/chart.js/dist/Chart.min.js"></script>
+  <script src="/static/assets/js/plugins/chart.js/dist/Chart.extension.js"></script>
+  <!--   Argon JS   -->
+  <script src="/static/assets/js/argon-dashboard.min.js?v=1.1.2"></script> 
+
+  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+
+
+  <script>
+    window.TrackJS &&
+      TrackJS.install({
+        token: "ee6fab19c5a04ac1a32a645abde4613a",
+        application: "argon-dashboard-free"
+      });
+  </script>
+</body>
+
+</html>
